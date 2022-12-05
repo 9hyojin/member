@@ -23,6 +23,7 @@ public class MemberEntity {
     @Column
     private String memberName;
 
+    //dto -> entity 변환
     public  static MemberEntity toMemberEntity(MemberDTO memberDTO){
         MemberEntity memberEntity = new MemberEntity();
         memberEntity.setMemberEmail(memberDTO.getMemberEmail());
